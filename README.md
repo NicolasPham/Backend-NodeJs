@@ -39,13 +39,23 @@
       
   > File System (FS):
     >> fs-sync:
-      >>> const {readFileSync, writeFileSync} = require('fs');
-      >>> const variable = readFileSync("path", "encoded (utf8)")
-      >>> writeFileSync('path', `Content: ${variable file}`, {flag: 'a'}) - flag: 'a' to set WriteFileSync to update the file rather than replace the file
-   >> fs-async:
-      >> 
+      - const {readFileSync, writeFileSync} = require('fs');
+      - const variable = readFileSync("path", "encoded (utf8)")
+      - writeFileSync('path', `Content: ${variable file}`, {flag: 'a'}) - flag: 'a' to set WriteFileSync to update the file rather than replace the file
+      
+    >> fs-async: need a call back function
+      - const {readFile, writeFile} = require("fs");
+      - readFile('path', 'utf8', (err, result) => {
+        if (err) {
+          console.log(err);
+          return
+        }
+        console.log(result);
+        )
     
   > HTTP:
+    - const http = require('http');
+    
     
     
     
