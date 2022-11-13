@@ -20,6 +20,14 @@
 
 3. Built-in Modules:
   > OS: 
+    >> const os = require("os");
+    >> other OS methods:
+      - os.userInfo();
+      - os.uptime();
+      - os.type();
+      - os.release();
+      - os.totalmem();
+      - os.freemem();
   > Path:
   > File System (FS):
   > HTTP:
