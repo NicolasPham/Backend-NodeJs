@@ -21,15 +21,30 @@
 3. Built-in Modules:
   > OS: 
     >> const os = require("os");
-    >> other OS methods:
+    >> OS methods:
       - os.userInfo();
       - os.uptime();
       - os.type();
       - os.release();
       - os.totalmem();
       - os.freemem();
+      
   > Path:
+    >> const path = require('path');
+    >> Methods:
+      - path.sep;
+      - path.join("/content/", 'subfolder', 'test.txt');
+      - path.basename(filePath) - return the name of the file
+      - path.resolve(__dirname, 'content', 'subfolder','test.txt'); - return the absolute path
+      
   > File System (FS):
+    >> fs-sync:
+      >>> const {readFileSync, writeFileSync} = require('fs');
+      >>> const variable = readFileSync("path", "encoded (utf8)")
+      >>> writeFileSync('path', `Content: ${variable file}`, {flag: 'a'}) - flag: 'a' to set WriteFileSync to update the file rather than replace the file
+   >> fs-async:
+      >> 
+    
   > HTTP:
     
     
