@@ -45,13 +45,21 @@
       
     >> fs-async: need a call back function
       - const {readFile, writeFile} = require("fs");
-      - readFile('path', 'utf8', (err, result) => {
-        if (err) {
-          console.log(err);
-          return
+      - const getText = (path) => {
+          return new Promise((resolve, reject) => {
+              readFile(path, "utf8", (err, data) => {
+                  if (err) {
+                      reject(err)
+                  } else {
+                      resolve(data);
+                  }
+              });
+          })
         }
-        console.log(result);
-        )
+
+      - getText("./content/first.txt")
+          .then(result => console.log(result))
+          .catch(err => console.log(err));
     
   > HTTP:
     - const http = require('http');
