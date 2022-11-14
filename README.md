@@ -56,7 +56,20 @@
               });
           })
         }
+        
+      - const start = async () => {
+          try {
+              const first = await getText("./content/first.txt");
+              console.log(first);
+          } catch (error) {
+              console.log(error);
+          }
 
+      };
+
+      - start();
+
+      // or we can do as:
       - getText("./content/first.txt")
           .then(result => console.log(result))
           .catch(err => console.log(err));
