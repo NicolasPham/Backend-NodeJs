@@ -71,7 +71,8 @@
     - server2.listen(5000);
 
 4. NPM:
-  - 
+  - package.json: manifest file (stores important info about projects/packages)
+  - npm init -y (everything yes to default)
     
     
 ```
