@@ -68,7 +68,7 @@
           `)
         }
       });
-    - server2.listen(5000);
+    - server2.listen(5000, () => {console.log("port 5000")});
 
 4. NPM:
   - package.json: manifest file (stores important info about projects/packages)
