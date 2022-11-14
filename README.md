@@ -79,7 +79,11 @@
     "start": "node app.js",
     "dev" : "nodemon app.js" -- npm run [nameofCommand]
   },
-  
+
+5. Event Loop: is what allows Node.js to perform non-blocking I/O operations by offloading operations to the system kernel whenever possible
+6. Async Patterns
+7. Events Emitter
+8. Streams 
     
 ```
 </details>
