@@ -55,7 +55,20 @@
     
   > HTTP:
     - const http = require('http');
-    
+    - const server2 = http.createServer((req, res) => {
+        if (req.url === "/") {
+          res.write("welcome to home page");
+        } else if (req.url === "/about") {
+          res.write("About page")
+        } else {
+          res.end(`
+          <h1>We can't find</h1>
+          <p>Please go back to home page by clicking</p>
+          <a href ="/">home page</a>
+          `)
+        }
+      });
+    - server2.listen(5000);
     
     
     
