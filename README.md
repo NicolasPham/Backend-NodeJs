@@ -74,6 +74,7 @@
   - package.json: manifest file (stores important info about projects/packages)
   - npm init -y (everything yes to default)
   - npm install: install all dependencies in package.json because we are not sharing the "node_modules" folder
+  - npm i nodemon -D : install as a devDependency
   
     
 ```
