@@ -112,8 +112,6 @@
   - customEmitter.on('nameOfEvent', ([argument1], [argument2])=>{});
   - customEmitter.emit('nameOfEvent',[argument1], [argument2]);
   
-7. Streams: 4 types : writeable / readable / duplex / transform
-  
     
 ```
 </details>
