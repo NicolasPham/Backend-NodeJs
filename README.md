@@ -1,7 +1,7 @@
 * NodeJs
 <details>
 
-```javascript
+```ruby
 1. Globals: no window, no browser
   > __dirname: path to current directory
   > __filename: file name
