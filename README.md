@@ -102,9 +102,18 @@
   },
 
 5. Event Loop: is what allows Node.js to perform non-blocking I/O operations by offloading operations to the system kernel whenever possible
-6. Async Patterns
-7. Events Emitter
-8. Streams 
+
+6. Events Emitter:
+  - const EventEmitter = require('events');
+  - const customEmitter = new EventEmitter();
+    >> Methods: we can have as many event as we want
+      - on: listen for an event
+      - emit: emit an event
+  - customEmitter.on('nameOfEvent', ([argument1], [argument2])=>{});
+  - customEmitter.emit('nameOfEvent',[argument1], [argument2]);
+  
+7. Streams: 4 types : writeable / readable / duplex / transform
+  
     
 ```
 </details>
