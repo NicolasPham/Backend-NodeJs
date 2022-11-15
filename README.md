@@ -97,6 +97,9 @@
       > post - insert data - www.store.com /api/orders - place an order (send data)
       > put - update data - www.store.com/api/orders/:id - update specific order (params + send data)
       > delete - delete data - www.store.com/api/orders/:id - delete order (path params)
+      
+      > response.end([data[, encoding]][, callback]): MUST be called on each response
+        signals the serer that all of the response headers and body have been sent, that server should consider this message complete.
 
 4. NPM:
   - package.json: manifest file (stores important info about projects/packages)
@@ -120,5 +123,17 @@
   - customEmitter.emit('nameOfEvent',[argument1], [argument2]);
   
     
+```
+</details>
+
+* Express
+<details>
+
+```ruby
+
+
+
+
+
 ```
 </details>
