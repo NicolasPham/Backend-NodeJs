@@ -91,7 +91,7 @@
       });
     - server2.listen(5000, () => {console.log("port 5000")});
     - Methods: 
-      > Get - read data
+      > get - read data
         >> www.store.com/api/orders - get all orders
         >> www.store.com/api/orders/:id - get single order (path params)
       > post - insert data - www.store.com /api/orders - place an order (send data)
