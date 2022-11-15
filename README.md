@@ -130,10 +130,10 @@
 <details>
 
 ```ruby
-- HTTP server:
-    - const server = http.create((req, res) => {
-    - const url = req.url
-    - if (url === '/') {
+- ** HTTP server:
+    > const server = http.create((req, res) => {
+    > const url = req.url
+    > if (url === '/') {
         res.writeHead(200, {'content-type' : 'text/html'})
         res.write('<h1>Hello to home page</h1>');
         res.end();
@@ -142,10 +142,20 @@
         res.write('<h1>Page can not be found</h1>')
         res.end();
       }
-
+    > {'content-type': 'text/[html / plain / css / javascript / svg+xml]'}
     })
-    - req propeties: req.method / req.url
+    > req propeties: req.method / req.url
 
+- ** Express: get / post / put / delete / all / use / listen
+  > const express = require('express');
+  > const app = express();
+  > app.get('/', (req, res) => {
+      res.status(200).send(HomePage);
+      })
+  > app.all('*', (req, res)=> {
+      res.status(404).send("404 Page Not Found");
+      })
+  
 
 
 
