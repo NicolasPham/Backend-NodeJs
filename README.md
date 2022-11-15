@@ -90,6 +90,13 @@
         }
       });
     - server2.listen(5000, () => {console.log("port 5000")});
+    - Methods: 
+      > Get - read data
+        >> www.store.com/api/orders - get all orders
+        >> www.store.com/api/orders/:id - get single order (path params)
+      > post - insert data - www.store.com /api/orders - place an order (send data)
+      > put - update data - www.store.com/api/orders/:id - update specific order (params + send data)
+      > delete - delete data - www.store.com/api/orders/:id - delete order (path params)
 
 4. NPM:
   - package.json: manifest file (stores important info about projects/packages)
