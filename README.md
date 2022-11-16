@@ -204,7 +204,28 @@
     });
   
 
-- Middleware
+- Middleware: MUST ALWAYS use either res.send() or next()
+    > const logger = (req, res, next) => {
+      const method = req.method;
+      const url = req.url;
+      const time = new Date().getFullYear();
+      console.log(method, url, time);
+      next();
+    };
+
+    > app.get("/", logger,(req, res) => {
+      res.send("HOME");
+    });
+    
+    -- In order to apply to all the get request: app.use will involk all the request
+      > app.use('/api', logger); 
+          // order matters, must be above all the app.get want to apply
+          // only after to url start with '/api' such as '/api/products'
+
+
+
+
+
 
 
 ```
