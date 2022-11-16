@@ -161,7 +161,26 @@
       res.status(404).send("404 Page Not Found");
       })
   
+```
+</details>
 
+* API
+<details>
+
+```javascript
+- app.get("/api/products/:productId", (req, res) => {
+    const { productId } = req.params;
+
+    const singleProduct = products.find(
+      (product) => product.id === Number(productId)
+    );
+
+    if (singleProduct) {
+      res.json(singleProduct);
+    } else {
+      res.send(`<h1>We can't not find your product</h1>`);
+    }
+  });
 
 
 ```
