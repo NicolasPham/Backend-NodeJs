@@ -149,8 +149,13 @@
 - ** Express: get / post / put / delete / all / use / listen
   > const express = require('express');
   > const app = express();
+  > const path = require('path');
+  
+  > app.use(express.static('./public'));
+  > const homePage = path.join(__dirname, 'navbar-app/index.html)
+  
   > app.get('/', (req, res) => {
-      res.status(200).send(HomePage);
+      res.status(200).send(homePage);
       })
   > app.all('*', (req, res)=> {
       res.status(404).send("404 Page Not Found");
