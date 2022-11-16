@@ -168,7 +168,8 @@
 <details>
 
 ```javascript
-- app.get("/api/products/:productId", (req, res) => {
+- Route:
+> app.get("/api/products/:productId", (req, res) => {
     const { productId } = req.params;
 
     const singleProduct = products.find(
@@ -181,6 +182,9 @@
       res.send(`<h1>We can't not find your product</h1>`);
     }
   });
+
+
+- Query String:
 
 
 ```
